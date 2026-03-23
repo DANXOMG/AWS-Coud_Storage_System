@@ -1,0 +1,40 @@
+FROM ubuntu:24.04
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+RUN apt-get update && apt-get install -y \
+    python3 python3-pip python3-venv \
+    mariadb-server mariadb-client \
+    && rm -rf /var/lib/apt/lists/*
+
+RUN useradd -m -s /bin/bash control_tfg
+
+RUN mkdir -p /run/mysqld /var/lib/mysql /home/control_tfg/source/code && \
+    chown -R control_tfg:control_tfg /run/mysqld /var/lib/mysql /home/control_tfg/source
+
+RUN printf "[mysqld]\nuser = control_tfg\ndatadir = /var/lib/mysql\nbind-address = 127.0.0.1\nport = 3306\nskip-grant-tables\n" > /etc/mysql/my.cnf
+
+WORKDIR /home/control_tfg/source
+COPY --chown=control_tfg:control_tfg ./code ./code
+COPY --chown=control_tfg:control_tfg ./requirements ./requirements
+
+USER control_tfg
+
+RUN mkdir -p /tmp/quarantine
+RUN mysql_install_db --user=control_tfg --datadir=/var/lib/mysql
+RUN python3 -m venv environment
+RUN ./environment/bin/pip install --no-cache-dir fastapi uvicorn mysql-connector-python cryptography python-multipart
+
+EXPOSE 5000
+
+CMD bash -c "\
+    mysqld --user=control_tfg & \
+    sleep 6 && \
+    cd /home/control_tfg/source/code/db && \
+    PYTHONPATH=/home/control_tfg/source/code \
+        /home/control_tfg/source/environment/bin/python3 setup_sql.py && \
+    echo '[+] DB lista. Arrancando API...' && \
+    cd /home/control_tfg/source/code && \
+    PYTHONPATH=/home/control_tfg/source/code \
+        /home/control_tfg/source/environment/bin/python3 -m uvicorn \
+        engines.analysis.fastapi_bridge:app --host 0.0.0.0 --port 5000"
