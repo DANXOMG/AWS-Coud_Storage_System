@@ -1,0 +1,188 @@
+{
+  "main": {
+    "id": "ea69ad89c824cf50",
+    "type": "split",
+    "children": [
+      {
+        "id": "230adfa4a22dc0e2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "979d9b8b3904b915",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "SO)/Modelos/AWS EC2 INFRAESTRUCTURA/Modelo Lógico (Estructura y specs).md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Modelo Lógico (Estructura y specs)"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "852e48733236629f",
+    "type": "split",
+    "children": [
+      {
+        "id": "d25e3785609b06ca",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "960a2a2879035169",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorador de archivos"
+            }
+          },
+          {
+            "id": "796d2754958a3a7e",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Buscar"
+            }
+          },
+          {
+            "id": "c91bf31370c50206",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Marcadores"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "d6eadd5f688034d6",
+    "type": "split",
+    "children": [
+      {
+        "id": "ca21f6055a2a4cdc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d71a2473d2e79bf3",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "SO)/Modelos/AntiVirus -- Control --/Modelo Lógico.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Enlaces entrantes de Modelo Lógico"
+            }
+          },
+          {
+            "id": "b3f572b49a6fd3c9",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "SO)/Modelos/AntiVirus -- Control --/Modelo Lógico.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Enlaces salientes de Modelo Lógico"
+            }
+          },
+          {
+            "id": "594cea43c1dba6c9",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Etiquetas"
+            }
+          },
+          {
+            "id": "8e7038a45456638a",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "SO)/Modelos/AntiVirus -- Control --/Modelo Lógico.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Esquema de Modelo Lógico"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Abrir selector rápido": false,
+      "graph:Abrir vista gráfica": false,
+      "canvas:Crear nuevo lienzo": false,
+      "daily-notes:Abrir la nota de hoy": false,
+      "templates:Insertar plantilla": false,
+      "command-palette:Abrir paleta de comandos": false,
+      "bases:Crear nueva base": false
+    }
+  },
+  "active": "979d9b8b3904b915",
+  "lastOpenFiles": [
+    "SO)/Modelos/DIAGRAMA DE GANTT (TESTEO).md",
+    "SO)/Modelos/AWS EC2 INFRAESTRUCTURA/Modelo Lógico (Estructura y specs).md",
+    "SO)/Modelos/AWS EC2 INFRAESTRUCTURA/Modelo Conceptual.md",
+    "SO)/Modelos/AntiVirus -- Control --/Modelo Lógico orientado a AWS.md",
+    "SO)/Modelos/AntiVirus -- Control --/Modelo Lógico.md",
+    "SO)/Modelos/AntiVirus -- Control --/Modelo Conceptual.md",
+    "SO)/assets/modelo_conceptual.png",
+    "assets/Sin confirmar 226618.crdownload",
+    "SO)/assets",
+    "asseys",
+    "Nueva carpeta",
+    "SO)/Modelos/AntiVirus -- Control --/Pasted image 20241214015552.png",
+    "SO)/Modelos/AWS EC2 INFRAESTRUCTURA"
+  ]
+}
